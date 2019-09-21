@@ -21,6 +21,13 @@ const button = document.querySelector('#add-code');
 
 // request.open('GET', 'https://restcountries.eu/rest/v2/all');
 // request.send();
+// contryCodeEl.addEventListener('change', e => {
+//     return getRescountries(e.target.value.toUpperCase()).then((data) => {
+//         coutryEl.innerHTML = "The name : " + "<span class=\"name-country\">" + data.altSpellings[1] + "</span>" + "<br>" + " Alpha 2 Code : " + "<span class=\"name-country\">" + data.alpha2Code + "</span>";
+//     }).catch(err => {
+//         console.log("Error :", err);
+//     })
+// })
 contryCodeEl.addEventListener('change', e => {
     return getRescountries(e.target.value.toUpperCase()).then((data) => {
         coutryEl.innerHTML = "The name : " + "<span class=\"name-country\">" + data.altSpellings[1] + "</span>" + "<br>" + " Alpha 2 Code : " + "<span class=\"name-country\">" + data.alpha2Code + "</span>";
