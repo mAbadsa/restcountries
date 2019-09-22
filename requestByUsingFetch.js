@@ -9,6 +9,5 @@ const getRescountries = (countryCode) => {
         return data.find(el => {
             return el.alpha2Code === countryCode;
         });
-        // return myData;
     })
 }
